@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Geolocation + Weather</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Get Your Live Location & Weather</h2>
+  <button onclick="getLocation()">Get Location</button><br><br>
+
+  Latitude: <input type="number" id="latitude-input"><br>
+  Longitude: <input type="number" id="longitude-input"><br>
+
+  <div class="info-box" id="latitude">Latitude: -</div>
+  <div class="info-box" id="longitude">Longitude: -</div>
+  <div class="info-box" id="current-location">Current Location: -</div>
+  <div class="info-box" id="taluka">Taluka: -</div>
+  <div class="info-box" id="district">District: -</div>
+  <div class="info-box" id="weather">Weather: -</div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
